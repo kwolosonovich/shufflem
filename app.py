@@ -7,3 +7,8 @@ app.config['SQLALCHEMY_ECHO'] = True
 app.config['SECRET_KEY'] = "secret"
 
 
+@app.route('/')
+def welcome():
+    '''Render welcome page.'''
+    
+    return render_template('welcome.html')
