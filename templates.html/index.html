@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/axios/dist/axios.js"></script>
-    <title>Async Code</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Shufflem {% block title %}{% endblock %}</title>
+
 </head>
 <body>
 
     <h1>Shufflem</h1>
 
+    <div class="flash-msg">
+        {% for msg in get_flashed_messages() %}
+            <div class="alert m3 text-primary w-75 mx-auto">{{ msg }}</div> 
+        {% endfor %}
+    </div>
+
+    {% block content %}{% endblock %}
+
+    {% block footer %}{% endblock %}
+
     
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="deck_of_cards.js"></script>
 
