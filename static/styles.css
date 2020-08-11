@@ -1,3 +1,7 @@
+body {
+    font-family: 'Holtwood One SC', serif;
+}
+
 html, body, header, .view {
     height: 100%;
 }
@@ -8,22 +12,18 @@ html, body, header, .view {
     }
 }
 
-h1 {
-    letter-spacing: 8px;
-}
-
-h5 {
-    letter-spacing: 3px;
-}
-
 .hr-light {
     border-top: 3px solid #fff;
     width: 80px;
 }
 
-.main-bg {
-    background-image: '/images/1747.jpg'; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: center center;
+.btn-style {
+    background-color: rgba(255, 255, 255, 0.63);
+}
+
+img {
+     position: absolute;
+     left: 0;
+     right: 0;
+     margin: auto;
 }

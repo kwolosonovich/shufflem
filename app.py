@@ -12,3 +12,14 @@ def welcome():
     '''Render welcome page.'''
     
     return render_template('welcome.html')
+
+
+@app.route('/start')
+def start_game():
+    '''Render welcome page.'''
+
+    return render_template('homepage.html')
+
+
+
+

@@ -2,45 +2,27 @@
 
 {% block title %} Welcome {% endblock %}
 
+{% block content %}
 
-    {% block content %}
-
-  <!-- Full Page Intro -->
-  <div class="view jarallax main-bg" data-jarallax='{"speed": 0.2}'>
-    <!-- Mask & flexbox options-->
+  <header>
+ 
+  <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('https://image.freepik.com/free-vector/western-saloon-background_1308-29053.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-      <!-- Content -->
       <div class="container">
-        <!--Grid row-->
         <div class="row">
-          <!--Grid column-->
           <div class="col-md-12 mb-4 white-text text-center">
-            <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown"
+            <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown display-3"
               data-wow-delay="0.3s"><strong>Shufflem</strong></h1>
             <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
-            <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Ready. Set. DRAW!</strong></h5>
-            <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">Start Game</a>
+            <h3 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Ready. Set. DRAW!</strong></h3>
+            <a class="btn btn-outline-white wow fadeInDown btn-style mb-0" data-wow-delay="0.4s" href="/start"><h5 class="mb-0">Start Game</h5></a>
           </div>
-          <!--Grid column-->
         </div>
-        <!--Grid row-->
       </div>
-      <!-- Content -->
     </div>
-    <!-- Mask & flexbox options-->
   </div>
-  <!-- Full Page Intro -->
+
 </header>
 
-
-
-{% endblock %}
-
-
-
-{% block footer %}
-    <div class="footer">
-        <a href='https://www.freepik.com/vectors/wood'>Wood vector created by upklyak - www.freepik.com</a>
-    </div>
 {% endblock %}
 

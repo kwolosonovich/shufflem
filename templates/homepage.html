@@ -3,20 +3,32 @@
 {% block title %} Play Game {% endblock %}
 
 
+{% block content %}
 
-    {% block content %}
-    {% endblock %}
+<header>
 
-
-
-    {% block footer %}
-        <div class="footer"></div>
-            <a href='https://www.freepik.com/vectors/party'>Party vector created by upklyak - www.freepik.com</a>
+    <div class="view jarallax" data-jarallax='{"speed": 0.2}'
+        style="background-image: url('https://image.freepik.com/free-vector/western-saloon-background_1308-29053.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mb-4 text-center">
+                        <h1 class="h1-reponsive text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown display-3"
+                            data-wow-delay="0.3s"><strong>Shufflem</strong></h1>
+                        <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+                        <!-- <a class="btn btn-outline-white wow fadeInDown h4 btn-style" data-wow-delay="0.4s" id="shuffle" href="/start"><h5 class="mb-0"></h5>Shuffle</h5></a> -->
+                        <a class="btn btn-outline-white btn-style" id="draw">
+                            <h5 class="mb-0"></h5>Draw
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    {% endblock %}
+        <hr class="mt-5 mb-5">
+        <div class="container align-content-center" id="cards">
+        </div>
+    </div>
 
-
+</header>
 
 {% endblock %}
-
-
